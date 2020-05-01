@@ -12,7 +12,9 @@
   },
   "scripts": {
     "test": "eslint .",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "MIT",
   "bugs": {
@@ -27,6 +29,8 @@
   ],
   "homepage": "https://developer.mozilla.org/Add-ons/WebExtensions/Examples",
   "dependencies": {
-    "babel-eslint": "^7.2.3"
-  }
+    "babel-eslint": "^7.2.3",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
